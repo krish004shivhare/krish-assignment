@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark text-white;
+}
+
+/* Smooth transitions */
+.slide-enter {
+  @apply opacity-0 transform -translate-x-4;
+}
+.slide-enter-active {
+  @apply opacity-100 transform translate-x-0 transition-all duration-300;
+}
